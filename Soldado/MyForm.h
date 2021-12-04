@@ -45,30 +45,17 @@ namespace Ejercicio2PC2 {
 	private: System::ComponentModel::IContainer^ components;
 
 #pragma region Windows Form Designer generated code
-		/// <summary>
-		/// Método necesario para admitir el Diseñador. No se puede modificar
-		/// el contenido de este método con el editor de código.
-		/// </summary>
 		void InitializeComponent(void)
 		{
 			this->components = (gcnew System::ComponentModel::Container());
 			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->timer2 = (gcnew System::Windows::Forms::Timer(this->components));
 			this->SuspendLayout();
-			// 
-			// timer1
-			// 
 			this->timer1->Enabled = true;
 			this->timer1->Tick += gcnew System::EventHandler(this, &MyForm::timer1_Tick);
-			// 
-			// timer2
-			// 
 			this->timer2->Enabled = true;
 			this->timer2->Interval = 2000;
 			this->timer2->Tick += gcnew System::EventHandler(this, &MyForm::timer2_Tick);
-			// 
-			// MyForm
-			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(982, 455);
